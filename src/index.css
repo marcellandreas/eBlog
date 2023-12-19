@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #fdf8ee;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+}
+
+.timeline {
+  position: relative;
+  overflow-y: auto;
+  height: 400px; /* Atur tinggi sesuai kebutuhan */
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 40px; /* Atur jarak dari kiri */
+  margin-bottom: 20px;
+}
+
+.timeline-date {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+}
+
+.timeline-content {
+  margin-left: 10px; /* Jarak antara tanggal dan konten */
+}
