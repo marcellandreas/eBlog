@@ -23,10 +23,6 @@ const Home = () => {
           segala bentuk pelanggaran hukum. Bergabunglah dalam perjalanan
           pengetahuan yang aman dan profesional bersama kami!"
         </p>
-
-        <Link to="contact" spy={true} smooth={true} duration={500}>
-          <Button title="Contact Us" />
-        </Link>
       </div>
 
       <div
