@@ -17,11 +17,9 @@ const Home = () => {
           <span className="text-brightGreen"> Contents</span>
         </h2>
         <p className=" text-lightText mt-5 text-start">
-          "Selamat datang di Sumber Pendidikan Berkualitas! Kami berkomitmen
-          menyediakan informasi legal dan bermanfaat. Temukan artikel, panduan,
-          dan sumber daya edukatif tanpa konten ilegal. Kami tegas menolak
-          segala bentuk pelanggaran hukum. Bergabunglah dalam perjalanan
-          pengetahuan yang aman dan profesional bersama kami!"
+          Ilegal Content Itu? Apa ya? melanggar hukum atau kebijakan. Ini bisa
+          termasuk pornografi anak, kebencian rasial, pelanggaran hak cipta,
+          atau konten yang merangsang kekerasan.
         </p>
       </div>
 
