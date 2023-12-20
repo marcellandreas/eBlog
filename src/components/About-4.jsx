@@ -41,7 +41,7 @@ const About4 = () => {
             >
               <span className="font-bold text-slate-700">{data.title}</span>
               <br />
-              {data.title}
+              {data.content}
             </li>
           ))}
         </ul>
