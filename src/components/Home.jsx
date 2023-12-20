@@ -13,14 +13,12 @@ const Home = () => {
         className=" md:w-2/4 text-center"
       >
         <h2 className=" text-5xl font-semibold leading-tight">
-          ILLEGAL
-          <span className="text-brightGreen"> Contents</span>
+          Cyber
+          <span className="text-brightGreen">crime</span>
         </h2>
-        {/* <p className=" text-lightText mt-5 text-start">
-          Ilegal Content Itu? Apa ya? melanggar hukum atau kebijakan. Ini bisa
-          termasuk pornografi anak, kebencian rasial, pelanggaran hak cipta,
-          atau konten yang merangsang kekerasan.
-        </p> */}
+        <p className=" text-lightText mt-5 text-start">
+          Dengan Tema: Membahas Masalah Mengenai Ilegal Content
+        </p>
       </div>
 
       <div
