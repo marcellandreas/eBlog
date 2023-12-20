@@ -17,7 +17,12 @@ const Home = () => {
           <span className="text-brightGreen">crime</span>
         </h2>
         <p className=" text-lightText mt-5 text-start">
-          Dengan Tema: Membahas Masalah Mengenai Ilegal Content
+          Kejahatan dunia maya{" "}
+          <span className="text-brightGreen">CyberCrime</span> adalah istilah
+          yang mengacu kepada aktivitas kejahatan dengan komputer atau jaringan
+          komputer menjadi alat, sasaran atau tempat terjadinya kejahatan. Salah
+          satunya bentuk <span className="text-brightGreen">CyberCrime</span>{" "}
+          adalah <b className="text-brightGreen">Ilegal content</b>
         </p>
       </div>
 
