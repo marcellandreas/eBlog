@@ -35,8 +35,11 @@ const Teams = () => {
     <div className="w-full min-h-[80vh]  gap-20 md:gap-5 flex flex-col md:flex-row  md:mx-0 my-14 items-center justify-center flex-wrap relative  ">
       <Heading title1="My" title2="Team" />
       {data.map((data, i) => (
-        <div key={i} className="profile-card ">
-          <div className="img">
+        <div
+          key={i}
+          className="profile-card relative w-56 h-56 bg-white p-[30px] rounded-full shadow-[-5px 8px 45px rgba(51, 51, 51, 0.126)] my-0 mx-5 hover:h-[300px]  hover:rounded-[10px]  "
+        >
+          <div className=" relative w-full h-full">
             <img
               src={data.photo}
               alt={`Photo of ${data.name}`}
@@ -44,9 +47,13 @@ const Teams = () => {
             />
           </div>
           <div className="caption">
-            <h3>{data.name}</h3>
-            <p>{data.nim}</p>
-            <p>{data.status}</p>
+            <h3 className=" text-lg text-[#0c52a1] font-semibold">
+              {data.name}
+            </h3>
+            <p className=" text-base font-medium my-[2px] mb-3">{data.nim}</p>
+            <p className=" text-base font-medium my-[2px] mb-3">
+              {data.status}
+            </p>
             <div className="social-links">
               <a href="#">
                 <i className="fa-brands fa-facebook"></i>

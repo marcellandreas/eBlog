@@ -9,26 +9,3 @@ body {
   color: #000000;
   font-family: "Inter", sans-serif;
 }
-
-.timeline {
-  position: relative;
-  overflow-y: auto;
-  height: 400px; /* Atur tinggi sesuai kebutuhan */
-}
-
-.timeline-item {
-  position: relative;
-  padding-left: 40px; /* Atur jarak dari kiri */
-  margin-bottom: 20px;
-}
-
-.timeline-date {
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-weight: bold;
-}
-
-.timeline-content {
-  margin-left: 10px; /* Jarak antara tanggal dan konten */
-}
