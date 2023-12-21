@@ -1,56 +1,23 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { menuNav } from "../data/data";
 
 const Footer = () => {
   return (
     <div>
       <div className=" flex flex-col md:flex-row justify-between bg-white border-2 border-lightText rounded-lg md:px-32 p-5">
         <div className="flex flex-col md:flex-row gap-5 font-medium p-1 text-lg">
-          <Link
-            to="home"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            Home
-          </Link>
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            About
-          </Link>
-          <Link
-            to="courses"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            Content
-          </Link>
-          <Link
-            to="team"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            My Team
-          </Link>
-          <Link
-            to="kasus"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            Kasus
-          </Link>
+          {menuNav.map((nav, i) => (
+            <Link
+              to={nav.to}
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="hover:text-[#539165] transition-all cursor-pointer"
+            >
+              {nav.name}
+            </Link>
+          ))}
         </div>
 
         <div className=" mt-4 md:mt-0">

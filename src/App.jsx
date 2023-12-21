@@ -1,19 +1,20 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Courses from "./components/Courses";
-import Reviews from "./components/Reviews";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import News from "./components/News";
-import Teams from "./components/Teams";
-import About2 from "./components/About-2";
-import About3 from "./components/About-3";
-import About4 from "./components/About-4";
-import About5 from "./components/About-5";
-import About6 from "./components/About-6";
+import {
+  Navbar,
+  Home,
+  About,
+  Courses,
+  Footer,
+  News,
+  Teams,
+  About2,
+  About3,
+  About4,
+  About5,
+  About6,
+} from "./components";
+import Layout from "./layout/Layout";
 
 const App = () => {
   return (
@@ -22,44 +23,45 @@ const App = () => {
         <Navbar />
 
         <main>
-          <div id="home">
+          <Layout disableClassName id="home">
             <Home />
-          </div>
+          </Layout>
 
-          <div id="about">
+          <Layout id="about">
             <About />
-          </div>
+          </Layout>
 
-          <div id="courses">
+          <Layout disableClassName id="courses">
             <Courses />
-          </div>
+          </Layout>
 
-          <div>
+          <Layout>
             <About2 />
-          </div>
+          </Layout>
 
-          <div>
+          <Layout>
             <About3 />
-          </div>
+          </Layout>
 
-          <div>
+          <Layout>
             <About4 />
-          </div>
+          </Layout>
 
-          <div>
+          <Layout>
             <About5 />
-          </div>
-          <div>
+          </Layout>
+
+          <Layout>
             <About6 />
-          </div>
+          </Layout>
 
-          <div id="kasus">
+          <Layout id="kasus">
             <News />
-          </div>
+          </Layout>
 
-          <div id="team">
+          <Layout disableClassName id="team">
             <Teams />
-          </div>
+          </Layout>
 
           {/* <div id="contact">
             <Contact />

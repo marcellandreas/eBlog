@@ -1,9 +1,6 @@
 import React from "react";
 import img2 from "../assets/images/banner.png";
 
-import Button from "../layout/Button";
-import { Link } from "react-scroll";
-
 const Home = () => {
   return (
     <div className=" min-h-[70vh] flex flex-col md:flex-row md:justify-between items-center md:mx-32 mx-5 mt-10">

@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../assets/images/about1.png";
 import Heading from "../layout/Heading";
+import ImgAbout from "../layout/ImgAbout";
 
 const About = () => {
   const data = [
@@ -16,14 +17,8 @@ const About = () => {
     },
   ];
   return (
-    <div className=" md:min-h-screen flex flex-col-reverse md:flex-row items-center gap-5 md:mx-32 mx-5 mt-14">
-      <div
-        data-aos="fade-right"
-        data-aos-duration={700}
-        className=" w-full md:w-2/4"
-      >
-        <img src={img} alt="img" />
-      </div>
+    <>
+      <ImgAbout style={"fade-right"} src={img} alt={"about picture 1"} />
 
       <div
         data-aos="fade-left"
@@ -45,7 +40,7 @@ const About = () => {
           })}
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,27 +1,12 @@
 import React from "react";
 import img from "../assets/about.svg";
 import Heading from "../layout/Heading";
+import ImgAbout from "../layout/ImgAbout";
+import { dataPenegakanHukum } from "../data/data";
 
 const About4 = () => {
-  const data = [
-    {
-      title: "Identifikasi dan Pelacakan",
-      content:
-        "Otoritas berupaya mengidentifikasi pelaku dan melacak jejak konten ilegal",
-    },
-    {
-      title: "Proses Hukum",
-      content:
-        "Penegakan hukum dilakukan untuk membawa pelaku ke pengadilan dan memberikan hukuman yang setimpal",
-    },
-    {
-      title: "Kerjasama Internasional",
-      content:
-        "Kolaborasi antarnegara dalam menangani konten ilegal melalui pertukaran informasi dan sumber daya",
-    },
-  ];
   return (
-    <div className="bg-gray-200 md:bg-transparent md:min-h-screen flex flex-col md:flex-row items-center gap-5 md:mx-32 mx-0 p-5 md:p-0 mt-14">
+    <>
       <div
         data-aos="fade-right"
         data-aos-duration={700}
@@ -34,7 +19,7 @@ const About4 = () => {
           dan etis.
         </p>
         <ul className="flex flex-col gap-4 w-full">
-          {data.map((data, i) => (
+          {dataPenegakanHukum.map((data, i) => (
             <li
               key={i}
               className="bg-green-300 rounded-lg p-3 hover:scale-95 hover:bg-transparent hover:border hover:border-green-300 text-lightText"
@@ -46,14 +31,8 @@ const About4 = () => {
           ))}
         </ul>
       </div>
-      <div
-        data-aos="fade-left"
-        data-aos-duration={700}
-        className="w-full md:w-2/4"
-      >
-        <img src={img} alt="img" />
-      </div>
-    </div>
+      <ImgAbout style={"fade-left"} src={img} alt={"about picture 3"} />
+    </>
   );
 };
 

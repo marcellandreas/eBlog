@@ -7,7 +7,7 @@ import img from "../assets/images/content2-a.png";
 
 const News = () => {
   return (
-    <div className="bg-gray-200 md:bg-transparent md:min-h-screen flex flex-col   md:flex-row items-center gap-5 md:mx-32 mx-0 p-5 md:p-0 mt-14 text-lightText ">
+    <>
       {/* Bagian Kiri (About Us) */}
       <div className="md:w-1/2 w-full  p-5 flex flex-col justify-center items-center  h-[100vh]">
         <h2 className="text-xl text-center font-bold ">Analisa Contoh Kasus</h2>
@@ -205,7 +205,7 @@ const News = () => {
           <img src={img4} alt="Team Member 5" className="w-full rounded-lg" />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

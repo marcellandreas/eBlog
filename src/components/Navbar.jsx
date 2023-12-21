@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
+import { menuNav } from "../data/data";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -19,54 +20,20 @@ const Navbar = () => {
         </div>
 
         <nav className="hidden md:flex gap-5 font-medium p-1 text-lg">
-          <Link
-            to="home"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            Home
-          </Link>
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            About
-          </Link>
-          <Link
-            to="courses"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            Content
-          </Link>
-          <Link
-            to="team"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            My Team
-          </Link>
-          <Link
-            to="kasus"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            Kasus
-          </Link>
+          {menuNav.map((nav, i) => (
+            <Link
+              to={nav.to}
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="hover:text-[#539165] transition-all cursor-pointer"
+            >
+              {nav.name}
+            </Link>
+          ))}
         </nav>
 
-        <div className="flex md:hidden" onClick={handleChange}>
+        <div className="flex md:hidden " onClick={handleChange}>
           <div className=" p-2">
             <AiOutlineMenu size={22} />
           </div>
@@ -75,53 +42,19 @@ const Navbar = () => {
       <div
         className={` ${
           menu ? "translate-x-0" : "-translate-x-full"
-        } md:hidden flex flex-col absolute bg-[#ffffff] left-0 top-20 font-medium text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300 `}
+        } md:hidden flex flex-col absolute bg-[#ffffff] left-0 top-20 font-medium text-2xl text-center pt-8 pb-4 gap-8 w-full z-40 h-fit transition-transform duration-300 `}
       >
-        <Link
-          to="home"
-          spy={true}
-          smooth={true}
-          duration={500}
-          className="hover:text-[#539165] transition-all cursor-pointer"
-        >
-          Home
-        </Link>
-        <Link
-          to="about"
-          spy={true}
-          smooth={true}
-          duration={500}
-          className="hover:text-[#539165] transition-all cursor-pointer"
-        >
-          About
-        </Link>
-        <Link
-          to="courses"
-          spy={true}
-          smooth={true}
-          duration={500}
-          className="hover:text-[#539165] transition-all cursor-pointer"
-        >
-          Content
-        </Link>
-        <Link
-          to="team"
-          spy={true}
-          smooth={true}
-          duration={500}
-          className="hover:text-[#539165] transition-all cursor-pointer"
-        >
-          My Team
-        </Link>
-        <Link
-          to="kasus"
-          spy={true}
-          smooth={true}
-          duration={500}
-          className="hover:text-[#539165] transition-all cursor-pointer"
-        >
-          Kasus
-        </Link>
+        {menuNav.map((nav, i) => (
+          <Link
+            to={nav.to}
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="hover:text-[#539165] transition-all cursor-pointer"
+          >
+            {nav.name}
+          </Link>
+        ))}
       </div>
     </div>
   );
