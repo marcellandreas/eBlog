@@ -2,6 +2,8 @@
 
 eBlog adalah sebuah proyek yang dikembangkan sebagai tugas untuk memenuhi nilai UAS pada Mata Kuliah Eptik. Proyek ini bertujuan untuk merangkum dan menganalisis hasil olahan data dengan sub tema **Ilegal Content**.
 
+![image](https://github.com/user-attachments/assets/ea7ad722-2107-4a32-b0d0-11e66b452c3f)
+
 ## Deskripsi Proyek
 
 eBlog menyediakan informasi dan wawasan mengenai kejahatan dunia maya, khususnya terkait CyberCrime. Melalui artikel yang edukatif, platform ini bertujuan untuk meningkatkan kesadaran pengguna tentang ancaman yang ditimbulkan oleh konten ilegal dan cara melindungi diri di dunia digital.
